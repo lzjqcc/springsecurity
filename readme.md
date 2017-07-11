@@ -1,7 +1,6 @@
 ## spring security学习
 
 spring security是由一堆过滤器和aop来控制用户访问和认证
-
 #### spring security XML文件
 
 ```xml
@@ -102,3 +101,12 @@ public class HelloWordController {
     }
 }
 ```
+####解决使用@preAuthorize无效
+1，开启允许使用@preAuthorize
+```
+  <global-method-security pre-post-annotations="enabled" proxy-target-class="true"/>
+```
+2,springmvc 整合spring security时 将上面的的代码加入到springmvc的配置文件中
+3，在Controller中使用@preAuthorize
+详见
+http://blog.csdn.net/win7system/article/details/52192566

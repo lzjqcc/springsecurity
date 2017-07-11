@@ -47,10 +47,6 @@
         <property name="maxWait">
             <value>60000</value>
         </property>
-        <!-- 连接池最大空间 -->
-        <property name="maxIdle">
-            <value>20</value>
-        </property>
         <!-- 连接池最小空间 -->
         <property name="minIdle">
             <value>3</value>
